@@ -31,7 +31,7 @@ jobs:
         with:
            java-version: 1.8
       - name: Build with Gradle
-        run: gradle bootRun
+        run: gradle build
       - name: Build war file
         run: mkdir staging && cp target/*.war staging
       - uses: actions/upload-artifact@v1
